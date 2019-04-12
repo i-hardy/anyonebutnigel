@@ -1,0 +1,359 @@
+[
+  {
+    "name": "Stuart Agnew",
+    "constituency": "East of England",
+    "party": "UK Independence Party"
+  },
+  {
+    "name": "Martina Anderson",
+    "constituency": "Northern Ireland",
+    "party": "Sinn Féin"
+  },
+  {
+    "name": "Marta Andreasen",
+    "constituency": "South East England",
+    "party": "Conservative Party"
+  },
+  {
+    "name": "Richard Ashworth",
+    "constituency": "South East England",
+    "party": "Conservative Party"
+  },
+  {
+    "name": "Robert Atkins",
+    "constituency": "North West England",
+    "party": "Conservative Party"
+  },
+  {
+    "name": "Gerard Batten",
+    "constituency": "London",
+    "party": "UK Independence Party"
+  },
+  {
+    "name": "Catherine Bearder",
+    "constituency": "South East England",
+    "party": "Liberal Democrats"
+  },
+  {
+    "name": "Phil Bennion",
+    "constituency": "West Midlands",
+    "party": "Liberal Democrats"
+  },
+  {
+    "name": "Godfrey Bloom",
+    "constituency": "Yorkshire and the Humber",
+    "party": "Independent"
+  },
+  {
+    "name": "Sharon Bowles",
+    "constituency": "South East England",
+    "party": "Liberal Democrats"
+  },
+  {
+    "name": "Philip Bradbourn",
+    "constituency": "West Midlands",
+    "party": "Conservative Party"
+  },
+  {
+    "name": "Andrew Brons",
+    "constituency": "Yorkshire and the Humber",
+    "party": "British Democratic Party"
+  },
+  {
+    "name": "John Bufton",
+    "constituency": "Wales",
+    "party": "UK Independence Party"
+  },
+  {
+    "name": "Martin Callanan",
+    "constituency": "North East England",
+    "party": "Conservative Party"
+  },
+  {
+    "name": "David Campbell Bannerman",
+    "constituency": "East of England",
+    "party": "Conservative Party"
+  },
+  {
+    "name": "Michael Cashman",
+    "constituency": "West Midlands",
+    "party": "Labour Party"
+  },
+  {
+    "name": "Giles Chichester",
+    "constituency": "South West England",
+    "party": "Conservative Party"
+  },
+  {
+    "name": "Derek Clark",
+    "constituency": "East Midlands",
+    "party": "UK Independence Party"
+  },
+  {
+    "name": "Trevor Colman",
+    "constituency": "South West England",
+    "party": "UK Independence Party"
+  },
+  {
+    "name": "The Earl of Dartmouth",
+    "constituency": "South West England",
+    "party": "UK Independence Party"
+  },
+  {
+    "name": "Chris Davies",
+    "constituency": "North West England",
+    "party": "Liberal Democrats"
+  },
+  {
+    "name": "Nirj Deva",
+    "constituency": "South East England",
+    "party": "Conservative Party"
+  },
+  {
+    "name": "Diane Dodds",
+    "constituency": "Northern Ireland",
+    "party": "Democratic Unionist Party"
+  },
+  {
+    "name": "Andrew Duff",
+    "constituency": "East of England",
+    "party": "Liberal Democrats"
+  },
+  {
+    "name": "James Elles",
+    "constituency": "South East England",
+    "party": "Conservative Party"
+  },
+  { "name": "Jill Evans", "constituency": "Wales", "party": "Plaid Cymru" },
+  {
+    "name": "Nigel Farage",
+    "constituency": "South East England",
+    "party": "UK Independence Party"
+  },
+  {
+    "name": "Vicky Ford",
+    "constituency": "East of England",
+    "party": "Conservative Party"
+  },
+  {
+    "name": "Jacqueline Foster",
+    "constituency": "North West England",
+    "party": "Conservative Party"
+  },
+  {
+    "name": "Ashley Fox",
+    "constituency": "South West England",
+    "party": "Conservative Party"
+  },
+  {
+    "name": "Julie Girling",
+    "constituency": "South West England",
+    "party": "Conservative Party"
+  },
+  {
+    "name": "Nick Griffin",
+    "constituency": "North West England",
+    "party": "British National Party"
+  },
+  {
+    "name": "Fiona Hall",
+    "constituency": "North East England",
+    "party": "Liberal Democrats"
+  },
+  {
+    "name": "Daniel Hannan",
+    "constituency": "South East England",
+    "party": "Conservative Party"
+  },
+  {
+    "name": "Malcolm Harbour",
+    "constituency": "West Midlands",
+    "party": "Conservative Party"
+  },
+  {
+    "name": "Roger Helmer",
+    "constituency": "East Midlands",
+    "party": "UK Independence Party"
+  },
+  {
+    "name": "Mary Honeyball",
+    "constituency": "London",
+    "party": "Labour Party"
+  },
+  {
+    "name": "Richard Howitt",
+    "constituency": "East of England",
+    "party": "Labour Party"
+  },
+  {
+    "name": "Ian Hudghton",
+    "constituency": "Scotland",
+    "party": "Scottish National Party"
+  },
+  {
+    "name": "Stephen Hughes",
+    "constituency": "North East England",
+    "party": "Labour Party"
+  },
+  {
+    "name": "Syed Kamall",
+    "constituency": "London",
+    "party": "Conservative Party"
+  },
+  {
+    "name": "Saj Karim",
+    "constituency": "North West England",
+    "party": "Conservative Party"
+  },
+  {
+    "name": "Timothy Kirkhope",
+    "constituency": "Yorkshire and the Humber",
+    "party": "Conservative Party"
+  },
+  {
+    "name": "Jean Lambert",
+    "constituency": "London",
+    "party": "Green Party (England and Wales)"
+  },
+  {
+    "name": "Sarah Ludford",
+    "constituency": "London",
+    "party": "Liberal Democrats"
+  },
+  {
+    "name": "George Lyon",
+    "constituency": "Scotland",
+    "party": "Liberal Democrats"
+  },
+  {
+    "name": "David Martin",
+    "constituency": "Scotland",
+    "party": "Labour Party"
+  },
+  {
+    "name": "Linda McAvan",
+    "constituency": "Yorkshire and the Humber",
+    "party": "Labour Party"
+  },
+  {
+    "name": "Arlene McCarthy",
+    "constituency": "North West England",
+    "party": "Labour Party"
+  },
+  {
+    "name": "Emma McClarkin",
+    "constituency": "East Midlands",
+    "party": "Conservative Party"
+  },
+  {
+    "name": "Edward McMillan-Scott",
+    "constituency": "Yorkshire and the Humber",
+    "party": "Liberal Democrats"
+  },
+  {
+    "name": "Anthea McIntyre",
+    "constituency": "West Midlands",
+    "party": "Conservative Party"
+  },
+  {
+    "name": "Claude Moraes",
+    "constituency": "London",
+    "party": "Labour Party"
+  },
+  {
+    "name": "Mike Nattrass",
+    "constituency": "West Midlands",
+    "party": "An Independence from Europe"
+  },
+  {
+    "name": "Bill Newton Dunn",
+    "constituency": "East Midlands",
+    "party": "Liberal Democrats"
+  },
+  {
+    "name": "Jim Nicholson",
+    "constituency": "Northern Ireland",
+    "party": "Ulster Conservatives and Unionists - New Force"
+  },
+  {
+    "name": "Paul Nuttall",
+    "constituency": "North West England",
+    "party": "UK Independence Party"
+  },
+  {
+    "name": "Brian Simpson",
+    "constituency": "North West England",
+    "party": "Labour Party"
+  },
+  {
+    "name": "Nikki Sinclaire",
+    "constituency": "West Midlands",
+    "party": "We Demand a Referendum"
+  },
+  {
+    "name": "Peter Skinner",
+    "constituency": "South East England",
+    "party": "Labour Party"
+  },
+  {
+    "name": "Alyn Smith",
+    "constituency": "Scotland",
+    "party": "Scottish National Party"
+  },
+  {
+    "name": "Struan Stevenson",
+    "constituency": "Scotland",
+    "party": "Conservative Party"
+  },
+  {
+    "name": "Catherine Stihler",
+    "constituency": "Scotland",
+    "party": "Labour Party"
+  },
+  {
+    "name": "Robert Sturdy",
+    "constituency": "East of England",
+    "party": "Conservative Party"
+  },
+  {
+    "name": "Kay Swinburne",
+    "constituency": "Wales",
+    "party": "Conservative Party"
+  },
+  {
+    "name": "Charles Tannock",
+    "constituency": "London",
+    "party": "Conservative Party"
+  },
+  {
+    "name": "Keith Taylor",
+    "constituency": "South East England",
+    "party": "Green Party (England and Wales)"
+  },
+  {
+    "name": "Rebecca Taylor",
+    "constituency": "Yorkshire and the Humber",
+    "party": "Liberal Democrats"
+  },
+  {
+    "name": "Geoffrey Van Orden",
+    "constituency": "East of England",
+    "party": "Conservative Party"
+  },
+  { "name": "Derek Vaughan", "constituency": "Wales", "party": "Labour Party" },
+  {
+    "name": "Graham Watson",
+    "constituency": "South West England",
+    "party": "Liberal Democrats"
+  },
+  {
+    "name": "Glenis Willmott",
+    "constituency": "East Midlands",
+    "party": "Labour Party"
+  },
+  {
+    "name": "Marina Yannakoudakis",
+    "constituency": "London",
+    "party": "Conservative Party"
+  }
+]
