@@ -6,7 +6,8 @@
           <img
             alt="Nigel Farage"
             srcset="./assets/sorry-mobile.png 320w, ./assets/sorry.png 640w"
-            sizes="(max-width: 480px) 320px,
+            sizes="(max-width: 320px) 220px
+            (max-width: 480px) 320px,
             640px"
             src="./assets/sorry-mobile.png"
           />
@@ -44,7 +45,12 @@ export default {
 <style lang="scss">
 html,
 body {
-  height: 100%;
+  min-height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
 }
 
 #app {
@@ -54,8 +60,7 @@ body {
   text-align: center;
   color: #2c3e50;
   height: 100%;
-  display: flex;
-  flex-direction: column;
+  flex: 1;
 }
 
 h1,

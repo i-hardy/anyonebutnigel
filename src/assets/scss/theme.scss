@@ -1,5 +1,5 @@
 @import './variables';
-@import "~bulma/bulma";
+@import '~bulma/bulma';
 
 .button,
 .control.has-icons-left .icon,
@@ -90,7 +90,8 @@
 }
 
 .hero {
-  // Colors
+  display: flex;
+  display: -webkit-box !important;
   .navbar {
     background-color: $grey-dark;
   }

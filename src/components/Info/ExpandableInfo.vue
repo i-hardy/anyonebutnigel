@@ -1,16 +1,20 @@
 <template>
   <div class="card expandable-card">
     <div class="card-content">
-      <h3 class="title is-size-5" @click="isVisible = !isVisible">
-        {{ title }}
+      <a class="card-toggle" @click="isVisible = !isVisible">
+        <h3 class="title is-size-5 is-marginless">
+          {{ title }}
+        </h3>
         <span class="icon" :class="{ 'icon--rotate': isVisible }">
           <i class="fas fa-angle-down" aria-hidden="true"></i>
         </span>
-      </h3>
-      <slot
+      </a>
+      <div
         class="expandable-card__info"
         :class="{ 'expandable-card__info--visible': isVisible }"
-      ></slot>
+      >
+        <slot></slot>
+      </div>
     </div>
   </div>
 </template>
@@ -47,7 +51,14 @@ export default {
   }
 }
 
+.card-toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .icon {
+  float: right;
   @include mq($from: tablet) {
     display: none;
   }

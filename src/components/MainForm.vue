@@ -2,8 +2,9 @@
   <section class="section central has-background-light">
     <div class="container">
       <div class="columns is-mobile">
-        <div
-          class="form column is-half-tablet is-offset-one-quarter-tablet is-10-mobile is-offset-1-mobile"
+        <form
+          @submit.prevent
+          class="form column is-half-desktop is-offset-one-quarter-desktop is-10-mobile is-offset-1-mobile is-two-thirds-tablet is-offset-one-third-tablet"
         >
           <div class="field">
             <label for="postcode" class="label is-large">Postcode</label>
@@ -16,7 +17,7 @@
               />
             </div>
           </div>
-        </div>
+        </form>
       </div>
 
       <ApolloQuery
@@ -48,11 +49,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.central {
-  flex: 1;
-  flex-grow: 1;
-}
-
 .input {
   text-align: center;
 }

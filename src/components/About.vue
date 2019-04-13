@@ -1,5 +1,5 @@
 <template>
-  <section class="section has-background-dark has-text-white about">
+  <footer class="footer has-background-dark has-text-white about">
     <h2 class="subtitle has-text-white" @click="toggleContent">
       About this site
     </h2>
@@ -35,7 +35,7 @@
         >
       </p>
     </div>
-  </section>
+  </footer>
 </template>
 
 <script>
@@ -58,7 +58,7 @@ export default {
 @import '~sass-mq/mq';
 
 .about {
-  @include mq($from: mobile, $until: tablet) {
+  @include mq($until: desktop) {
     padding-bottom: 10px;
     &__content {
       display: none;
@@ -66,13 +66,6 @@ export default {
         display: block;
       }
     }
-  }
-}
-
-.github-buttons {
-  a,
-  span {
-    margin: 0 5px;
   }
 }
 </style>
