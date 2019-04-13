@@ -1,22 +1,45 @@
+const path = require('path');
 const { ApolloServer } = require('apollo-server-hapi');
 const Hapi = require('hapi');
+const inert = require('inert');
 
 const typeDefs = require('./lib/schema');
 const resolvers = require('./lib/resolvers');
+const { PORT, HOSTNAME, NODE_ENV } = require('./lib/config');
 
 const server = new ApolloServer({ typeDefs, resolvers });
 
 const app = new Hapi.server({
-  port: 4000,
-  host: 'localhost'
+  port: PORT,
+  host: HOSTNAME,
+  routes: {
+    files: {
+      relativeTo: path.join(__dirname, 'dist')
+    }
+  }
 });
 
 async function start() {
-  await app.register({
-    plugin: require('hapi-pino'),
-    options: {
-      prettyPrint: process.env.NODE_ENV !== 'production',
-      redact: ['req.headers.authorization']
+  await app.register([
+    inert,
+    {
+      plugin: require('hapi-pino'),
+      options: {
+        prettyPrint: NODE_ENV !== 'production',
+        redact: ['req.headers.authorization']
+      }
+    }
+  ]);
+
+  app.route({
+    method: 'GET',
+    path: '/{param*}',
+    handler: {
+      directory: {
+        path: '.',
+        redirectToSlash: true,
+        index: true
+      }
     }
   });
 
