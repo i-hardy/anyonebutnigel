@@ -1,0 +1,7 @@
+#import "./VoterInfoFragment.gql"
+
+query voterInfo($postcode: String!) {
+  voterInfo {
+    ...VoterInfo
+  }
+}

@@ -10,7 +10,7 @@ module.exports = {
     'eslint-config-prettier'
   ],
   rules: {
-    'prettier/prettier': ['error', { 'singleQuote': true }],
+    'prettier/prettier': ['error', { singleQuote: true }],
     quotes: ['error', 'single', { allowTemplateLiterals: true }]
   },
   parserOptions: {

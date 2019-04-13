@@ -1,0 +1,10 @@
+fragment VoterInfo on VoterInfo {
+  council {
+    name
+    website
+  }
+  pollingStation {
+    address
+    postcode
+  }
+}

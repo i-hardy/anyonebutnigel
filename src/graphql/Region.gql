@@ -1,0 +1,14 @@
+#import "./VoterInfoFragment.gql"
+
+query region($postcode: String!) {
+  region(postcode: $postcode) {
+    isNigel
+    MEPs {
+      name
+      party
+    }
+    voterInfo {
+      ...VoterInfo
+    }
+  }
+}
