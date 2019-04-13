@@ -10,15 +10,19 @@
           Thankfully... Nigel Farage is NOT your MEP
         </span>
       </h2>
-      <div class="columns">
-        <div class="column">
-          <h3 class="is-size-5">Who are my MEPs?</h3>
+      <div class="columns is-4 is-multiline">
+        <div class="column is-half">
+          <MEPs :region="region" />
+        </div>
+        <div class="column is-half">
+          <Voting :voterInfo="region.voterInfo" />
         </div>
         <div class="column">
-          <h3 class="is-size-5">How do I vote for anyone but Nigel?</h3>
-        </div>
-        <div class="column">
-          <h3 class="is-size-5">What's so bad about Nigel Farage?</h3>
+          <ExpandableInfo title="What's so bad about Nigel Farage?">
+            <p class="content">
+              How long have you got??
+            </p>
+          </ExpandableInfo>
         </div>
       </div>
     </div>
@@ -27,11 +31,17 @@
 
 <script>
 import Loader from './Loader.vue';
+import ExpandableInfo from './Info/ExpandableInfo.vue';
+import Voting from './Info/Voting.vue';
+import MEPs from './Info/MEPs.vue';
 
 export default {
   name: 'Result',
   components: {
-    Loader
+    Loader,
+    ExpandableInfo,
+    Voting,
+    MEPs
   },
   props: {
     region: {

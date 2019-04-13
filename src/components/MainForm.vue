@@ -49,7 +49,11 @@ export default {
 
 <style lang="scss" scoped>
 .central {
-  min-height: 55%;
   flex: 1;
+  flex-grow: 1;
+}
+
+.input {
+  text-align: center;
 }
 </style>

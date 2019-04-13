@@ -3,6 +3,7 @@
 query region($postcode: String!) {
   region(postcode: $postcode) {
     isNigel
+    postcode
     MEPs {
       name
       party

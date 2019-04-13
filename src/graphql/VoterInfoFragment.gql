@@ -1,10 +1,16 @@
 fragment VoterInfo on VoterInfo {
+  lat
+  long
   council {
     name
     website
+    email
+    phone
   }
   pollingStation {
     address
     postcode
+    lat
+    long
   }
 }

@@ -75,6 +75,6 @@ h5 {
 }
 
 .hero-body .container {
-  padding: 30px 0 20px;
+  padding: 30px 20px 20px;
 }
 </style>
