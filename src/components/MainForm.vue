@@ -1,46 +1,44 @@
 <template>
-  <div class="container">
-    <div class="columns is-mobile">
-      <div
-        class="form column is-half-tablet is-offset-one-quarter-tablet is-10-mobile is-offset-1-mobile"
-      >
-        <div class="field">
-          <label for="postcode" class="label is-large">Postcode</label>
-          <div class="control">
-            <input
-              v-model="postcode"
-              class="input is-large"
-              id="postcode"
-              type="text"
-            />
+  <section class="section central has-background-light">
+    <div class="container">
+      <div class="columns is-mobile">
+        <div
+          class="form column is-half-tablet is-offset-one-quarter-tablet is-10-mobile is-offset-1-mobile"
+        >
+          <div class="field">
+            <label for="postcode" class="label is-large">Postcode</label>
+            <div class="control">
+              <input
+                v-model="postcode"
+                class="input is-large"
+                id="postcode"
+                type="text"
+              />
+            </div>
           </div>
         </div>
       </div>
+
+      <ApolloQuery
+        :query="require('../graphql/Region.gql')"
+        :variables="{ postcode }"
+      >
+        <template slot-scope="{ result: { loading, error, data } }">
+          <Result :loading="loading" :region="data ? data.region : {}" />
+        </template>
+      </ApolloQuery>
     </div>
-
-    <ApolloQuery
-      :query="require('../graphql/Region.gql')"
-      :variables="{ postcode }"
-    >
-      <template slot-scope="{ result: { loading, error, data } }">
-        <div v-if="loading" class="loading apollo">Loading...</div>
-
-        <h2 v-else-if="data" class="subtitle has-text-weight-bold">
-          <span v-if="data.region.isNigel">
-            Sadly... Nigel Farage IS your MEP
-          </span>
-          <span v-else>
-            Thankfully... Nigel Farage is NOT your MEP
-          </span>
-        </h2>
-      </template>
-    </ApolloQuery>
-  </div>
+  </section>
 </template>
 
 <script>
+import Result from './Result.vue';
+
 export default {
   name: 'MainForm',
+  components: {
+    Result
+  },
   data() {
     return {
       postcode: ''
@@ -49,4 +47,9 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style lang="scss" scoped>
+.central {
+  min-height: 55%;
+  flex: 1;
+}
+</style>

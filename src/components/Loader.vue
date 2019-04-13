@@ -1,0 +1,51 @@
+<template>
+  <div class="query-loader">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</template>
+
+<script>
+export default {};
+</script>
+
+<style lang="scss" scoped>
+.query-loader {
+  display: inline-block;
+  position: relative;
+  width: 64px;
+  height: 64px;
+}
+.query-loader div {
+  display: inline-block;
+  position: absolute;
+  left: 6px;
+  width: 13px;
+  background: lighten($color: #8e8c84, $amount: 25%);
+  animation: load 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+}
+.query-loader div:nth-child(1) {
+  left: 6px;
+  animation-delay: -0.24s;
+}
+.query-loader div:nth-child(2) {
+  left: 26px;
+  animation-delay: -0.12s;
+}
+.query-loader div:nth-child(3) {
+  left: 45px;
+  animation-delay: 0;
+}
+@keyframes load {
+  0% {
+    top: 6px;
+    height: 51px;
+  }
+  50%,
+  100% {
+    top: 19px;
+    height: 26px;
+  }
+}
+</style>
