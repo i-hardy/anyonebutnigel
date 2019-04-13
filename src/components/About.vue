@@ -1,8 +1,13 @@
 <template>
   <footer class="footer has-background-dark has-text-white about">
-    <h2 class="subtitle has-text-white" @click="toggleContent">
-      About this site
-    </h2>
+    <a class="card-toggle" @click="toggleContent">
+      <h2 class="subtitle is-marginless has-text-white">
+        About this site
+      </h2>
+      <span class="icon is-large" :class="{ 'icon--rotate': showContent }">
+        <i class="fas fa-2x fa-angle-down" aria-hidden="true"></i>
+      </span>
+    </a>
     <div
       class="about__content"
       :class="{ 'about__content--visible': showContent }"
@@ -19,6 +24,8 @@
         <a href="https://www.mysociety.org/">mySociety</a> and
         <a href="https://wheredoivote.co.uk/">Where Do I Vote</a>.
       </p>
+    </div>
+    <div class="github-buttons">
       <p class="content github-buttons">
         <a
           class="github-button"
@@ -56,6 +63,7 @@ export default {
 
 <style lang="scss" scoped>
 @import '~sass-mq/mq';
+@import '../assets/scss/_variables.scss';
 
 .about {
   @include mq($until: desktop) {
@@ -67,5 +75,33 @@ export default {
       }
     }
   }
+
+  a:hover {
+    color: $light;
+  }
+}
+
+.card-toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include mq($from: tablet) {
+    justify-content: center;
+    cursor: default;
+  }
+  .icon {
+    float: right;
+    @include mq($from: tablet) {
+      display: none;
+    }
+    transition: transform 0.1s ease-in-out;
+    &--rotate {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.github-buttons {
+  margin-top: 1.5rem;
 }
 </style>

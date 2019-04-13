@@ -19,7 +19,9 @@
     </p>
     <p class="content" v-if="voterInfo.pollingStation.address">
       Your polling station is at: <br />
-      {{ voterInfo.pollingStation.address }} <br />
+      <span v-for="(line, index) in sanitizeAddress" :key="index">
+        {{ line }}<br
+      /></span>
       {{ voterInfo.pollingStation.postcode }}<br />
       <a target="_blank" :href="googleMapsDirections"
         >Get directions from Google Maps</a
@@ -52,6 +54,9 @@ export default {
       const today = new Date();
       const cutoff = new Date('2019-05-07');
       return cutoff > today;
+    },
+    sanitizeAddress() {
+      return this.voterInfo.pollingStation.address.split('<br />');
     },
     googleMapsDirections() {
       return `https://www.google.com/maps/dir/?api=1&origin=${

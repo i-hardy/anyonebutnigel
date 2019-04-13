@@ -6,8 +6,7 @@
           <img
             alt="Nigel Farage"
             srcset="./assets/sorry-mobile.png 320w, ./assets/sorry.png 640w"
-            sizes="(max-width: 320px) 220px
-            (max-width: 480px) 320px,
+            sizes="(max-width: 480px) 320px,
             640px"
             src="./assets/sorry-mobile.png"
           />
@@ -49,12 +48,13 @@ body {
 }
 
 body {
-  display: flex;
-  flex-direction: column;
+  // display: flex;
+  // flex-direction: column;
 }
 
 #app {
   font-family: 'Lato', Helvetica, Arial, sans-serif;
+  font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -68,7 +68,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'Raleway', Helvetica, Arial, sans-serif;
+  font-family: 'Noto Sans', Helvetica, Arial, sans-serif;
 }
 
 .image {

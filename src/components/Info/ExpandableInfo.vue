@@ -5,8 +5,8 @@
         <h3 class="title is-size-5 is-marginless">
           {{ title }}
         </h3>
-        <span class="icon" :class="{ 'icon--rotate': isVisible }">
-          <i class="fas fa-angle-down" aria-hidden="true"></i>
+        <span class="icon is-large" :class="{ 'icon--rotate': isVisible }">
+          <i class="fas fa-2x fa-angle-down" aria-hidden="true"></i>
         </span>
       </a>
       <div
@@ -42,6 +42,7 @@ export default {
 .expandable-card {
   height: 100%;
   &__info {
+    padding-top: 10px;
     @include mq($from: mobile, $until: tablet) {
       display: none;
       &--visible {
@@ -53,18 +54,21 @@ export default {
 
 .card-toggle {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-}
-
-.icon {
-  float: right;
   @include mq($from: tablet) {
-    display: none;
+    justify-content: center;
+    cursor: default;
   }
-  transition: transform 0.1s ease-in-out;
-  &--rotate {
-    transform: rotate(180deg);
+  .icon {
+    float: right;
+    @include mq($from: tablet) {
+      display: none;
+    }
+    transition: transform 0.1s ease-in-out;
+    &--rotate {
+      transform: rotate(180deg);
+    }
   }
 }
 </style>

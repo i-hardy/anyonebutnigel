@@ -4,7 +4,7 @@
       <div class="columns is-mobile">
         <form
           @submit.prevent
-          class="form column is-half-desktop is-offset-one-quarter-desktop is-10-mobile is-offset-1-mobile is-two-thirds-tablet is-offset-one-third-tablet"
+          class="form column is-half-desktop is-offset-one-quarter-desktop is-10-mobile is-offset-1-mobile is-two-thirds-tablet is-offset-2-tablet"
         >
           <div class="field">
             <label for="postcode" class="label is-large">Postcode</label>
