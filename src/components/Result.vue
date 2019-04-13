@@ -18,11 +18,7 @@
           <Voting :voterInfo="region.voterInfo" />
         </div>
         <div class="column">
-          <ExpandableInfo title="What's so bad about Nigel Farage?">
-            <p class="content">
-              How long have you got??
-            </p>
-          </ExpandableInfo>
+          <NigelFacts />
         </div>
       </div>
     </div>
@@ -30,18 +26,18 @@
 </template>
 
 <script>
-import Loader from './Loader.vue';
-import ExpandableInfo from './Info/ExpandableInfo.vue';
+import Loader from './Utility/Loader.vue';
 import Voting from './Info/Voting.vue';
 import MEPs from './Info/MEPs.vue';
+import NigelFacts from './Info/NigelFacts.vue';
 
 export default {
   name: 'Result',
   components: {
     Loader,
-    ExpandableInfo,
     Voting,
-    MEPs
+    MEPs,
+    NigelFacts
   },
   props: {
     region: {

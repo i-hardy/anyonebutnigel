@@ -3,10 +3,9 @@
     <p class="content">
       If you're a British or EU citizen living in the UK, you can vote in the
       European Parliament election.
-      <span v-if="canStillRegister" class="content">
-        You can
+      <span v-if="canStillRegister">
         <a href="https://www.gov.uk/register-to-vote"
-          >register to vote at gov.uk</a
+          >Register to vote at gov.uk</a
         >
       </span>
     </p>
@@ -19,7 +18,7 @@
     </p>
     <p class="content" v-if="voterInfo.pollingStation.address">
       Your polling station is at: <br />
-      <span v-for="(line, index) in sanitizeAddress" :key="index">
+      <span v-for="(line, index) in sanitiseAddress" :key="index">
         {{ line }}<br
       /></span>
       {{ voterInfo.pollingStation.postcode }}<br />
@@ -55,7 +54,7 @@ export default {
       const cutoff = new Date('2019-05-07');
       return cutoff > today;
     },
-    sanitizeAddress() {
+    sanitiseAddress() {
       return this.voterInfo.pollingStation.address.split('<br />');
     },
     googleMapsDirections() {
