@@ -19,7 +19,7 @@
               />
             </div>
             <div class="control">
-              <button class="button is-large-tablet is-primary">
+              <button type="submit" class="button is-large-tablet is-primary">
                 Check
               </button>
             </div>
