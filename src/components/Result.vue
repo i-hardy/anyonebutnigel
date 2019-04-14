@@ -1,10 +1,7 @@
 <template>
   <section class="section is-paddingless">
     <Loader v-if="loading" />
-    <h2
-      v-else-if="errorMessage && !region.MEPs"
-      class="subtitle is-size-4 has-text-danger"
-    >
+    <h2 v-else-if="errorMessage" class="subtitle is-size-4 has-text-danger">
       {{ niceError }}
     </h2>
     <div v-else-if="region.MEPs" class="container is-paddingless">

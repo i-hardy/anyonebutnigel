@@ -49,9 +49,13 @@ export default {
     };
   },
   methods: {
+    resetResult() {
+      this.region = {};
+      this.showError = '';
+    },
     async getPostcode() {
+      this.resetResult();
       try {
-        this.region = {};
         this.loading = true;
         const { data } = await this.$apollo.query({
           query: require('../graphql/Region.gql'),
