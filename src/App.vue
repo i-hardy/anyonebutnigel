@@ -1,6 +1,8 @@
 <template>
   <main id="app" class="has-background-light">
     <section class="hero is-bold is-primary">
+      <Stars />
+
       <div class="hero-body is-medium is-paddingless level">
         <figure class="image">
           <img
@@ -29,12 +31,14 @@
 <script>
 import MainForm from './components/MainForm.vue';
 import About from './components/About.vue';
+import Stars from './components/Utility/Stars.vue';
 
 export default {
   name: 'app',
   components: {
     MainForm,
-    About
+    About,
+    Stars
   }
 };
 </script>

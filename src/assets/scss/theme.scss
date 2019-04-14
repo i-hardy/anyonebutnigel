@@ -122,3 +122,16 @@
   position: absolute;
   bottom: 1rem;
 }
+
+.form {
+  .control {
+    &--flex {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+.star {
+  fill: $warning;
+}

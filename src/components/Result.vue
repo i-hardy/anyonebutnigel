@@ -1,6 +1,9 @@
 <template>
   <section class="section is-paddingless">
     <Loader v-if="loading" />
+    <h2 v-else-if="errorMessage" class="subtitle is-size-4 has-text-danger">
+      {{ niceError }}
+    </h2>
     <div v-else-if="region.MEPs" class="container is-paddingless">
       <h2 class="subtitle is-size-4 has-text-weight-bold">
         <span v-if="region.isNigel">
@@ -47,6 +50,15 @@ export default {
     loading: {
       type: Boolean,
       default: true
+    },
+    errorMessage: {
+      type: String,
+      default: ''
+    }
+  },
+  computed: {
+    niceError() {
+      return this.errorMessage.split(': ')[1];
     }
   }
 };

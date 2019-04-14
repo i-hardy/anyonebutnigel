@@ -1,8 +1,8 @@
 <template>
   <ExpandableInfo title="What's so bad about Nigel Farage?">
     <div class="has-text-left">
-      <h4 class="is-size-6 has-text-weight-semibold has-text-left">
-        Nigel Farage is a liar
+      <!-- <h4 class="is-size-6 has-text-weight-semibold has-text-left">
+        Nigel Farage isn't honest about his views
       </h4>
       <ul class="content">
         <li>
@@ -15,9 +15,9 @@
             >Britain would 'thrive' outside of the EU.</NewTabLink
           >
         </li>
-      </ul>
+      </ul> -->
       <h4 class="is-size-6 has-text-weight-semibold has-text-left">
-        Nigel Farage is wasting your money
+        Nigel Farage is wasting public money
       </h4>
       <ul class="content">
         <li>
@@ -26,7 +26,7 @@
             href="https://www.independent.co.uk/news/uk/politics/brexit-ukip-eu-money-misspending-eu-referendum-campaign-a7422471.html"
             >forced him to repay EU funds spent on the Brexit campaign and his
             campaign for the British parliament</NewTabLink
-          >
+          >.
         </li>
         <li>
           In 2017 he was
@@ -34,23 +34,14 @@
             href="https://www.thetimes.co.uk/article/ukip-faces-500-000-bill-over-claims-of-misused-eu-cash-dr3jzzfgv"
             >one of eight UKIP MEPs investigated for misuse of EU
             funds</NewTabLink
-          >
-        </li>
-        <li>
-          Half of his salary as an MEP was docked after
-          <NewTabLink
-            href="https://www.theguardian.com/politics/2018/jan/12/nigel-farage-eu-salary-docked-claim-misspent-public-funds"
-          >
-            he used EU money to pay an assistant who did not work on European
-            Parliament business
-          </NewTabLink>
+          >.
         </li>
         <li>
           If the UK leaves the EU he is eligible to receive
           <NewTabLink
             href="https://news.sky.com/story/british-meps-in-line-for-eur6m-golden-goodbye-when-uk-leaves-eu-11123258"
             >a 'transitional payment' of £150,000</NewTabLink
-          >, to be paid for from the UK's 'Brexit Bill'.
+          >, to be paid for from the UK's Brexit bill.
         </li>
       </ul>
       <h4 class="is-size-6 has-text-weight-semibold has-text-left">
