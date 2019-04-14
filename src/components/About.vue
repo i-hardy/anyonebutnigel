@@ -23,10 +23,12 @@
           This site doesn't use cookies or store any of your personal
           information. Your postcode is used to search data generously provided
           by
-          <NewTabLink href="https://www.mysociety.org/">mySociety</NewTabLink>
+          <new-tab-link href="https://www.mysociety.org/"
+            >mySociety</new-tab-link
+          >
           and
-          <NewTabLink href="https://wheredoivote.co.uk/"
-            >Where Do I Vote</NewTabLink
+          <new-tab-link href="https://wheredoivote.co.uk/"
+            >Where Do I Vote</new-tab-link
           >.
         </p>
       </div>

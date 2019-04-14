@@ -64,10 +64,6 @@
             href="https://www.independent.co.uk/news/uk/politics/nigel-farage-nhs-might-have-to-be-replaced-by-private-health-insurance-9988904.html"
             >replacing the NHS with a US-style private health insurance
             system</new-tab-link
-          >, despite the fact that the NHS
-          <new-tab-link href="https://www.bbc.co.uk/news/health-40608253"
-            >regularly outranks the US system in performance and
-            provision</new-tab-link
           >.
         </li>
         <li>
@@ -79,7 +75,7 @@
           >.
         </li>
         <li>
-          And that
+          Also in 2014, he said that
           <new-tab-link
             href="https://www.yorkshirepost.co.uk/news/mothers-worth-less-than-men-as-employees-says-ukip-s-farage-1-6384320/amp"
             >women are "worth less" than men in the workplace</new-tab-link

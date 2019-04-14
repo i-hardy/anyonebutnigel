@@ -1,19 +1,19 @@
 <template>
-  <ExpandableInfo title="How do I vote for anyone but Nigel?">
+  <expandable-info title="How do I vote for anyone but Nigel?">
     <p class="content">
       If you're a British or EU citizen living in the UK, you can vote in the
       European Parliament election.
       <span v-if="canStillRegister">
-        <NewTabLink href="https://www.gov.uk/register-to-vote"
-          >Register to vote at gov.uk</NewTabLink
+        <new-tab-link href="https://www.gov.uk/register-to-vote"
+          >Register to vote at gov.uk</new-tab-link
         >
       </span>
     </p>
     <p class="content">
       Your local authority is
-      <NewTabLink :href="voterInfo.council.website">{{
+      <new-tab-link :href="voterInfo.council.website">{{
         voterInfo.council.name
-      }}</NewTabLink
+      }}</new-tab-link
       >.
     </p>
     <p class="content" v-if="voterInfo.pollingStation.address">
@@ -22,8 +22,8 @@
         {{ line }}<br
       /></span>
       {{ voterInfo.pollingStation.postcode }}<br />
-      <NewTabLink :href="googleMapsDirections"
-        >Get directions from Google Maps</NewTabLink
+      <new-tab-link :href="googleMapsDirections"
+        >Get directions from Google Maps</new-tab-link
       >
     </p>
     <p class="content" v-else>
@@ -34,12 +34,12 @@
     <footer class="card-footer">
       <p class="is-size-7">
         Information provided by
-        <NewTabLink href="https://wheredoivote.co.uk/"
-          >Where Do I Vote</NewTabLink
+        <new-tab-link href="https://wheredoivote.co.uk/"
+          >Where Do I Vote</new-tab-link
         >
       </p>
     </footer>
-  </ExpandableInfo>
+  </expandable-info>
 </template>
 
 <script>

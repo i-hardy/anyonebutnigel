@@ -1,6 +1,6 @@
 <template>
   <section class="section is-paddingless">
-    <Loader v-if="loading" />
+    <loader v-if="loading" />
     <h2 v-else-if="errorMessage" class="subtitle is-size-4 has-text-danger">
       {{ niceError }}
     </h2>
@@ -15,13 +15,13 @@
       </h2>
       <div class="columns is-4 is-multiline">
         <div class="column is-half">
-          <MEPs :region="region" />
+          <m-e-ps :region="region" />
         </div>
         <div class="column is-half">
-          <Voting :voterInfo="region.voterInfo" />
+          <voting :voterInfo="region.voterInfo" />
         </div>
         <div class="column">
-          <NigelFacts />
+          <nigel-facts />
         </div>
       </div>
     </div>

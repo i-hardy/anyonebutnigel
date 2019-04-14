@@ -27,7 +27,7 @@
         </form>
       </div>
 
-      <Result :loading="loading" :region="region" :errorMessage="showError" />
+      <result :loading="loading" :region="region" :errorMessage="showError" />
     </div>
   </section>
 </template>

@@ -1,5 +1,5 @@
 <template>
-  <ExpandableInfo :title="mepsTitle">
+  <expandable-info :title="mepsTitle">
     <ul class="content">
       <li v-for="(mep, index) in region.MEPs" :key="index">
         {{ mep.name }} ({{ mep.party }})
@@ -7,21 +7,21 @@
     </ul>
     <p class="content">
       You can contact them via
-      <NewTabLink
+      <new-tab-link
         :href="`https://www.writetothem.com/who?pc=${region.postcode}&a=EUR`"
-        >WriteToThem</NewTabLink
+        >WriteToThem</new-tab-link
       >
     </p>
     <footer class="card-footer">
       <p class="is-size-7">
         Information provided by the
-        <NewTabLink
+        <new-tab-link
           href="https://data.europa.eu/euodp/data/dataset/members-of-the-european-parliament"
-          >EU Open Data Portal</NewTabLink
+          >EU Open Data Portal</new-tab-link
         >
       </p>
     </footer>
-  </ExpandableInfo>
+  </expandable-info>
 </template>
 
 <script>

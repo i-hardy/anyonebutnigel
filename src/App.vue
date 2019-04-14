@@ -1,8 +1,7 @@
 <template>
   <main id="app" class="has-background-light">
     <section class="hero is-bold is-primary">
-      <Stars />
-
+      <stars />
       <div class="hero-body is-medium is-paddingless level">
         <figure class="image">
           <img
@@ -23,8 +22,8 @@
         </div>
       </div>
     </section>
-    <MainForm />
-    <About />
+    <main-form />
+    <about />
   </main>
 </template>
 
