@@ -12,12 +12,10 @@
           />
         </figure>
         <div class="container">
-          <h1
-            class="title has-text-warning is-size-1 is-size-2-mobile has-text-weight-bold"
-          >
+          <h1 class="title is-size-1 is-size-2-mobile has-text-weight-bold">
             Is Nigel Farage your MEP?
           </h1>
-          <h2 class="subtitle has-text-warning is-size-3 is-size-4-mobile">
+          <h2 class="subtitle is-size-3 is-size-4-mobile">
             Enter your postcode to find out
           </h2>
         </div>

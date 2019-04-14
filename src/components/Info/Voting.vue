@@ -4,16 +4,16 @@
       If you're a British or EU citizen living in the UK, you can vote in the
       European Parliament election.
       <span v-if="canStillRegister">
-        <a href="https://www.gov.uk/register-to-vote"
-          >Register to vote at gov.uk</a
+        <NewTabLink href="https://www.gov.uk/register-to-vote"
+          >Register to vote at gov.uk</NewTabLink
         >
       </span>
     </p>
     <p class="content">
       Your local authority is
-      <a target="_blank" :href="voterInfo.council.website">{{
+      <NewTabLink :href="voterInfo.council.website">{{
         voterInfo.council.name
-      }}</a
+      }}</NewTabLink
       >.
     </p>
     <p class="content" v-if="voterInfo.pollingStation.address">
@@ -22,8 +22,8 @@
         {{ line }}<br
       /></span>
       {{ voterInfo.pollingStation.postcode }}<br />
-      <a target="_blank" :href="googleMapsDirections"
-        >Get directions from Google Maps</a
+      <NewTabLink :href="googleMapsDirections"
+        >Get directions from Google Maps</NewTabLink
       >
     </p>
     <p class="content" v-else>
@@ -31,16 +31,26 @@
       <a :href="`tel:+${voterInfo.council.phone}`">phone</a> them to find out
       where to vote.
     </p>
+    <footer class="card-footer">
+      <p class="is-size-7">
+        Information provided by
+        <NewTabLink href="https://wheredoivote.co.uk/"
+          >Where Do I Vote</NewTabLink
+        >
+      </p>
+    </footer>
   </ExpandableInfo>
 </template>
 
 <script>
 import ExpandableInfo from './ExpandableInfo.vue';
+import NewTabLink from '../Utility/NewTabLink.vue';
 
 export default {
   name: 'Voting',
   components: {
-    ExpandableInfo
+    ExpandableInfo,
+    NewTabLink
   },
   props: {
     voterInfo: {
@@ -68,4 +78,4 @@ export default {
 };
 </script>
 
-<style></style>
+<style scoped></style>

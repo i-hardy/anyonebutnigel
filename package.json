@@ -7,9 +7,9 @@
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "dev": "cross-env NODE_ENV=development nodemon server.js",
+    "heroku-postbuild": "npm install && npm run build",
     "start": "node server.js",
-    "test:unit": "vue-cli-service test:unit",
-    "heroku-postbuild": "npm install && npm run build"
+    "test:unit": "vue-cli-service test:unit"
   },
   "dependencies": {
     "apollo-server": "^2.4.8",
@@ -50,6 +50,7 @@
     "prerender-spa-plugin": "^3.4.0",
     "sass-loader": "^7.1.0",
     "vue-cli-plugin-apollo": "^0.19.2",
+    "vue-cli-plugin-prerender-spa": "^1.1.5",
     "vue-template-compiler": "^2.5.21"
   },
   "postcss": {

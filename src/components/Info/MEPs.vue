@@ -5,22 +5,34 @@
         {{ mep.name }} ({{ mep.party }})
       </li>
     </ul>
-    You can contact them via
-    <a
-      target="_blank"
-      :href="`https://www.writetothem.com/who?pc=${region.postcode}&a=EUR`"
-      >WriteToThem</a
-    >
+    <p class="content">
+      You can contact them via
+      <NewTabLink
+        :href="`https://www.writetothem.com/who?pc=${region.postcode}&a=EUR`"
+        >WriteToThem</NewTabLink
+      >
+    </p>
+    <footer class="card-footer">
+      <p class="is-size-7">
+        Information provided by the
+        <NewTabLink
+          href="https://data.europa.eu/euodp/data/dataset/members-of-the-european-parliament"
+          >EU Open Data Portal</NewTabLink
+        >
+      </p>
+    </footer>
   </ExpandableInfo>
 </template>
 
 <script>
 import ExpandableInfo from './ExpandableInfo.vue';
+import NewTabLink from '../Utility/NewTabLink.vue';
 
 export default {
   name: 'MEPs',
   components: {
-    ExpandableInfo
+    ExpandableInfo,
+    NewTabLink
   },
   props: {
     region: {
@@ -37,5 +49,4 @@ export default {
 };
 </script>
 
-<style>
-</style>
+<style></style>

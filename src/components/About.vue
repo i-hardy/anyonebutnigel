@@ -21,12 +21,14 @@
       <p class="content">
         This site doesn't use cookies or store any of your personal information.
         Your postcode is used to search data generously provided by
-        <a href="https://www.mysociety.org/">mySociety</a> and
-        <a href="https://wheredoivote.co.uk/">Where Do I Vote</a>.
+        <NewTabLink href="https://www.mysociety.org/">mySociety</NewTabLink> and
+        <NewTabLink href="https://wheredoivote.co.uk/"
+          >Where Do I Vote</NewTabLink
+        >.
       </p>
     </div>
     <div class="github-buttons">
-      <p class="content github-buttons">
+      <p class="content">
         <a
           class="github-button"
           href="https://github.com/i-hardy"
@@ -46,8 +48,13 @@
 </template>
 
 <script>
+import NewTabLink from './Utility/NewTabLink.vue';
+
 export default {
   name: 'About',
+  components: {
+    NewTabLink
+  },
   data() {
     return {
       showContent: false
@@ -66,13 +73,11 @@ export default {
 @import '../assets/scss/_variables.scss';
 
 .about {
-  @include mq($until: desktop) {
-    padding-bottom: 10px;
-    &__content {
-      display: none;
-      &--visible {
-        display: block;
-      }
+  padding-bottom: 10px;
+  &__content {
+    display: none;
+    &--visible {
+      display: block;
     }
   }
 
@@ -85,15 +90,9 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  @include mq($from: tablet) {
-    justify-content: center;
-    cursor: default;
-  }
+  justify-content: center;
   .icon {
     float: right;
-    @include mq($from: tablet) {
-      display: none;
-    }
     transition: transform 0.1s ease-in-out;
     &--rotate {
       transform: rotate(180deg);
