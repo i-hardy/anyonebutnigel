@@ -2,22 +2,23 @@
   <expandable-info title="What's so bad about Nigel Farage?">
     <div class="has-text-left">
       <h4 class="is-size-6 has-text-weight-semibold has-text-left">
-        Nigel Farage is wasting public money
+        Nigel Farage is wasting your money
       </h4>
       <ul class="content">
         <li>
           In 2016 the European Parliament
           <new-tab-link
             href="https://www.independent.co.uk/news/uk/politics/brexit-ukip-eu-money-misspending-eu-referendum-campaign-a7422471.html"
-            >forced him to repay EU funds spent on the Brexit campaign and his
-            campaign for the British parliament</new-tab-link
+            >forced him to repay public funds spent on the Brexit campaign and
+            his personal campaign campaign for the British
+            parliament</new-tab-link
           >.
         </li>
         <li>
           In 2017 he was
           <new-tab-link
             href="https://www.thetimes.co.uk/article/ukip-faces-500-000-bill-over-claims-of-misused-eu-cash-dr3jzzfgv"
-            >one of eight UKIP MEPs investigated for misuse of EU
+            >one of eight UKIP MEPs investigated for misuse of public
             funds</new-tab-link
           >.
         </li>
@@ -92,7 +93,7 @@
             href="https://www.bbc.co.uk/news/av/world-us-canada-44932291/nigel-farage-on-steve-bannon-s-new-european-project"
             >long-standing association with American white nationalist Steve
             Bannon</new-tab-link
-          >
+          >.
         </li>
         <li>
           He and Leave.EU colleague Arron Banks have been
@@ -100,14 +101,14 @@
             href="https://www.vanityfair.com/news/2018/11/nigel-farages-name-keeps-coming-up-in-the-robert-mueller-probe"
             >linked to Russian financial interference in the 2016 referendum and
             US presidential election</new-tab-link
-          >
+          >.
         </li>
         <li>
-          In March 2019 he tried to
+          He's a friend and informal advisor to Donald Trump, even recently
           <new-tab-link
             href="https://www.standard.co.uk/news/politics/nigel-farage-met-donald-trump-and-urged-him-to-back-nodeal-deal-brexit-a4088886.html"
-            >gain backing for a no-deal Brexit from Donald Trump</new-tab-link
-          >
+            >urging him to encourage a no-deal Brexit</new-tab-link
+          >.
         </li>
       </ul>
       <h4 class="is-size-6 has-text-weight-semibold has-text-left">
