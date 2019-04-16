@@ -1,6 +1,13 @@
 <template>
   <expandable-info title="What's so bad about Nigel Farage?">
     <div class="has-text-left">
+      <p class="content">
+        Nigel claims that he speaks for people who have been forgotten and left
+        behind, that he's standing up for people not represented by 'elites'.
+        But he doesn't act like he has a lot of respect for the money, time or
+        values of people who voted for him, or for anyone else he's supposed to
+        represent.
+      </p>
       <h4 class="is-size-6 has-text-weight-semibold has-text-left">
         Nigel Farage is wasting your money
       </h4>

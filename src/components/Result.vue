@@ -15,7 +15,7 @@
       </h2>
       <div class="columns is-4 is-multiline">
         <div class="column is-half">
-          <m-e-ps :region="region" />
+          <meps :region="region" />
         </div>
         <div class="column is-half">
           <voting :voterInfo="region.voterInfo" />
@@ -31,7 +31,7 @@
 <script>
 import Loader from './Utility/Loader.vue';
 import Voting from './Info/Voting.vue';
-import MEPs from './Info/MEPs.vue';
+import Meps from './Info/MEPs.vue';
 import NigelFacts from './Info/NigelFacts.vue';
 
 export default {
@@ -39,7 +39,7 @@ export default {
   components: {
     Loader,
     Voting,
-    MEPs,
+    Meps,
     NigelFacts
   },
   props: {
