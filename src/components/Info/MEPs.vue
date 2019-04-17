@@ -14,10 +14,10 @@
     </p>
     <footer class="card-footer">
       <p class="is-size-7">
-        Information provided by the
+        Information provided by
         <new-tab-link
-          href="https://data.europa.eu/euodp/data/dataset/members-of-the-european-parliament"
-          >EU Open Data Portal</new-tab-link
+          href="https://www.theguardian.com/politics/ng-interactive/2014/may/25/european-elections-uk-results"
+          >The Guardian</new-tab-link
         >
       </p>
     </footer>
