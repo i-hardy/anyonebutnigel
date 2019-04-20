@@ -2,6 +2,7 @@ const path = require('path');
 const { ApolloServer } = require('apollo-server-hapi');
 const Hapi = require('hapi');
 const inert = require('inert');
+const https = require('hapi-require-https');
 
 const typeDefs = require('./lib/schema');
 const resolvers = require('./lib/resolvers');
@@ -22,6 +23,7 @@ const app = new Hapi.server({
 async function start() {
   await app.register([
     inert,
+    https,
     {
       plugin: require('hapi-pino'),
       options: {
